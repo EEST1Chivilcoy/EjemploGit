@@ -10,18 +10,22 @@
             if (!string.IsNullOrEmpty(nombre))
             {
                 Console.WriteLine($"Hola, {nombre}");
-            }
-            Console.WriteLine("Necesitamos verificar si es mayor de edad");
-            Console.WriteLine("Por favor, Ingrese su edad: ");
-            int edad = int.Parse(Console.ReadLine());
-            if (edad >= 18)
-            {
-                Console.WriteLine("Bienvenido!");
+                Console.WriteLine("Necesitamos verificar si es mayor de edad");
+                Console.WriteLine("Por favor, Ingrese su edad: ");
+                int edad = int.Parse(Console.ReadLine());
+                if (edad >= 18)
+                {
+                    Console.WriteLine("Bienvenido!");
+                }
+                else
+                {
+                    Console.WriteLine("No puede ingresar");
+                }
             }
             else
             {
-                Console.WriteLine("No puede ingresar");
-            }
+                Console.WriteLine("No podemos continuar si no ingresa un nombre.");
+            }            
         }
     }
 }
