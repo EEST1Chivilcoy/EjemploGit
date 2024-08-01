@@ -5,6 +5,12 @@
         static void Main(string[] args)
         {
             Console.WriteLine("¡Hola, Mundo!");
+            Console.WriteLine("Ingrese su nombre: ");
+            string nombre = Console.ReadLine();
+            if (!string.IsNullOrEmpty(nombre))
+            {
+                Console.WriteLine($"Hola, {nombre}");
+            }
         }
     }
 }
