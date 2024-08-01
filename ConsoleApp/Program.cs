@@ -20,7 +20,8 @@
             }
             else
             {
-                Console.WriteLine("No puede ingresar");
+                for (int i = 0; i < 50;i++)    
+                    Console.WriteLine("¡NO PUEDE INGRESAR!");
             }
         }
     }
